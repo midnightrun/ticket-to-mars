@@ -15,15 +15,18 @@ func main() {
 
 	for i := 0; i < 10; i++ {
 		spaceline := rand.Intn(3) + 1
+		var spacelineName string
 
 		switch spaceline {
 		case 1:
-			fmt.Printf("%-20v ", "Space Adventures")
+			spacelineName = "Space Adventures"
 		case 2:
-			fmt.Printf("%-20v ", "SpaceX")
+			spacelineName = "SpaceX"
 		case 3:
-			fmt.Printf("%-20v ", "Virgin Galactic")
+			spacelineName = "Virgin Galactic"
 		}
+
+		fmt.Printf("%-20s ", spacelineName)
 
 		priceRaise := rand.Intn(15)
 		speed := priceRaise + 16
