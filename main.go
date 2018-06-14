@@ -36,7 +36,7 @@ func main() {
 
 		if roundTrip {
 			fmt.Printf("%-10v ", "Round-trip")
-			fmt.Printf("$%4v \n", priceRaise+36*2)
+			fmt.Printf("$%4v \n", (priceRaise+36)*2)
 		} else {
 			fmt.Printf("%-10v ", "One-way")
 			fmt.Printf("$%4v \n", priceRaise+36)
